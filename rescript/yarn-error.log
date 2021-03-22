@@ -1,0 +1,50 @@
+Arguments: 
+  /Volumes/SSD/.fnm/node-versions/v14.15.4/installation/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/opt/openssl@1.1/bin:/usr/local/opt/gnu-getopt/bin:/Users/mandalarian/Downloads/caramel/bin:/Users/mandalarian/.opam/default/bin/refmt:/usr/local/opt/fzf/bin:/var/folders/rt/7lc5vcw16459dszl8djk35fh0000gn/T/fnm_multishell_12927_1616449803188/bin:.:/Volumes/SSD/.opam/book/bin:/Users/mandalarian/.local/bin:/var/folders/rt/7lc5vcw16459dszl8djk35fh0000gn/T/fnm_multishell_12887_1616449802325/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/aria2/bin:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Racket v7.6/bin:/Library/TeX/texbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/mandalarian/Library/Caches/Yarn/v6/npm-ansi-regex-2.1.1-c3b33ab5ee360d86e0e628f0468ae7ef27d654df-integrity/node_modules/ansi-regex/index.js' -> '/Volumes/SSD/Github/reason-notes-app/rescript/node_modules/webpack/node_modules/ansi-regex/index.js'
+
+npm manifest: 
+  {
+      "name": "reason-js-1",
+      "version": "0.1.0",
+      "scripts": {
+          "clean": "bsb -clean-world && rm -rf bundledOutputs",
+          "build": "npm run clean && bsb -make-world && npm test && webpack -p",
+          "watch:bsb": "BS_WATCH_CLEAR=true bsb -make-world -w",
+          "watch:webpack": "webpack -w",
+          "watch:test": "jest --watchAll",
+          "test": "jest"
+      },
+      "keywords": [ "BuckleScript" ],
+      "license": "MIT",
+      "devDependencies": {
+          "@glennsl/bs-jest": "0.7.0",
+          "bs-platform": "9.0.2",
+          "jest": "26.6.3",
+          "shared-git-hooks": "^1.2.1",
+          "webpack": "^3.0.0"
+      },
+      "dependencies": {
+          "@glennsl/bs-json": "5.0.2",
+          "bs-webapi": "0.19.1"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
